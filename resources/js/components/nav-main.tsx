@@ -28,13 +28,13 @@ export function NavMain({
     isActive?: boolean
     items?: {
       title: string
+      icon?: LucideIcon
       url: string
     }[]
   }[]
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible

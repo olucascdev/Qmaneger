@@ -4,12 +4,21 @@ import {
   BookOpen,
   Bot,
   Command,
+  Droplets,
   Frame,
   GalleryVerticalEnd,
   Map,
   PieChart,
   Settings2,
   SquareTerminal,
+  Truck,
+  FolderPlus,
+  Folder,
+  CirclePlus,
+  UserRoundPlus,
+  ChartColumnStacked,
+  CircleHelp,
+  MapPlus,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -25,132 +34,69 @@ import {
 } from "@/components/ui/sidebar"
 
 // This is sample data.
-const data = {
+const data = {  //usuario
   user: {
     name: "shadcn",
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
-  teams: [
+  unidades: [
     {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      name: "SPT-25",
+      logo: Droplets,
+      plan: "Assistente",
     },
     {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
+      name: "SPT-32",
+      logo: Droplets,
+      plan: "Assistente",
     },
     {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
+      name: "UCOQ",
+      logo: Droplets,
+      plan: "Principal",
     },
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Criar um novo Qrcode", //Aqui ele Criar e fica sem pasta vai para  ''meus qrcodes'' onde ira ficar todos
       url: "#",
-      icon: SquareTerminal,
-      isActive: true,
+      icon:  CirclePlus,
+      
+    },
+    {
+      title: "Meus Qrcodes",
+      url: "#",
+      icon: Folder,
       items: [
         {
-          title: "History",
+          title: "Criar nova pasta", //ao clicar vai pedir somente o nome da pasta e logo em cima embaixo vai ser adicionado a pasta
           url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
+          //tentar colocar icons aqui
+        }
+      ]
     },
     {
-      title: "Models",
+      title: "Estatiscas",
       url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
+      icon: ChartColumnStacked ,
     },
     {
-      title: "Documentation",
+      title: "Criar Usuário", // somente para masters
       url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
+      icon: UserRoundPlus,
     },
     {
-      title: "Settings",
+      title: "Criar Unidade", // somente para masters
       url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      icon: MapPlus,
     },
     {
-      name: "Sales & Marketing",
+      title: "Ajuda",
       url: "#",
-      icon: PieChart,
+      icon: CircleHelp,
     },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
-    },
+    
   ],
 }
 
@@ -158,11 +104,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <TeamSwitcher unidades={data.unidades} /> 
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
