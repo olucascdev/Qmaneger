@@ -72,7 +72,7 @@ const data = {  //usuario
         {
           title: "Criar nova pasta", //ao clicar vai pedir somente o nome da pasta e logo em cima embaixo vai ser adicionado a pasta
           url: "#",
-          //tentar colocar icons aqui
+          //tentar colocar icons aqui no nav-main e tentar modificar  para que se n tiver items nos titles ele n apararecer a opção de collapse e retirar o icon de seta
         }
       ]
     },
