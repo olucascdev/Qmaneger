@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/Components/ui/table";
+import { Checkbox } from "@/Components/ui/checkbox";
+import { Button } from "@/Components/ui/button";
+import { Card } from "@/Components/ui/card";
+import { Input } from "@/Components/ui/input";
 import { Copy, Trash, FolderPlus, Download, Filter } from "lucide-react";
 
 export default function QrCodeTable() {
@@ -14,11 +14,11 @@ export default function QrCodeTable() {
   ]);
 
   return (
-    <div className="flex flex-1 flex-col gap-4 p-2 pt-0">
+    <div className="flex flex-1 flex-col gap-4 p-2 pt-0 mt-8">
       {/* Seção de Cabeçalho */}
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center ">
         {/* Título */}
-        <h1 className="text-3xl font-bold w-1/4">Meus QrCodes</h1>
+        <h1 className="text-6xl font-bold w-2/4">Meus QrCodes</h1>
 
         {/* Card da Barra de Ações */}
         <Card className="p-4 rounded-xl bg-muted/30 flex-1 w-2/4 flex items-center gap-4">

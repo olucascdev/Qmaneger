@@ -15,8 +15,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { Button } from '@/components/ui/button';
+import { Button } from '@/Components/ui/button';
 import QrCodeTable from '@/Components/QrCodeTable';
+import PaginacaoHome from '@/Components/PaginacaoHome';
 
 export default function Dashboard() {
     return (
@@ -31,7 +32,7 @@ export default function Dashboard() {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Dashboard
+                    Home
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
@@ -42,7 +43,7 @@ export default function Dashboard() {
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
           <div className="min-h-[100vh] flex-1 rounded-xl md:min-h-min">
                 <QrCodeTable />
-
+                <PaginacaoHome />
           </div>
         </div>
       </SidebarInset>
