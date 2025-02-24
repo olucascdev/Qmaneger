@@ -1,12 +1,10 @@
 
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import QrCodeTable from '@/Components/QrCodeTable';
 
-
-export default function Home() {
+export default function Unidades() {
     return (
     <AuthenticatedLayout>
-       <QrCodeTable />
+      
     </AuthenticatedLayout>
     );
 }

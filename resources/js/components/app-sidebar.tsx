@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Link } from "@inertiajs/react";
+
 import {
   AudioWaveform,
   BookOpen,
@@ -60,19 +62,19 @@ const data = {  //usuario
   navMain: [
     {
       title: "Criar um novo Qrcode", //Aqui ele Criar e fica sem pasta vai para  ''meus qrcodes'' onde ira ficar todos
-      url: "#",
+      url: "/createQr",
       icon:  CirclePlus,
       
     },
     {
       title: "Meus Qrcodes",
-      url: "#",
+      url: "/home",
       icon: Folder,
       items: [
-        {
+        { //isso aqui vai ficar automatizado
           title: "Criar nova pasta", //ao clicar vai pedir somente o nome da pasta e logo em cima embaixo vai ser adicionado a pasta
           url: "#",
-          //tentar colocar icons aqui no nav-main e tentar modificar  para que se n tiver items nos titles ele n apararecer a opção de collapse e retirar o icon de seta
+          //tentar colocar icons aqui no nav-main 
         }
       ]
     },
@@ -83,12 +85,12 @@ const data = {  //usuario
     },
     {
       title: "Criar Usuário", // somente para masters
-      url: "#",
+      url: "/users",
       icon: UserRoundPlus,
     },
     {
       title: "Criar Unidade", // somente para masters
-      url: "#",
+      url: "/unidades",
       icon: MapPlus,
     },
     {

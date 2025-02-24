@@ -26,6 +26,10 @@ Route::get('/unidades', function () {
     return Inertia::render('Unidades');
 })->middleware(['auth', 'verified'])->name('unidades');
 
+Route::get('/createQr', function () {
+    return Inertia::render('CreateQr');
+})->middleware(['auth', 'verified'])->name('createQr');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
