@@ -19,11 +19,12 @@ import {
 import { Button } from '@/Components/ui/button';
 import QrCodeTable from '@/Components/QrCodeTable';
 import PaginacaoHome from '@/Components/PaginacaoHome';
+import UsersTable from '@/Components/UsersTable';
 
-export default function Home() {
+export default function Users() {
     return (
     <AuthenticatedLayout>
-       <QrCodeTable />
+       <UsersTable />
     </AuthenticatedLayout>
     );
 }

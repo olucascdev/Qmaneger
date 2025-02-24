@@ -5,6 +5,7 @@ import { Button } from "@/Components/ui/button";
 import { Card } from "@/Components/ui/card";
 import { Input } from "@/Components/ui/input";
 import { Copy, Trash, FolderPlus, Download, Filter } from "lucide-react";
+import PaginacaoHome from "./PaginacaoHome";
 
 export default function QrCodeTable() {
   const [data, setData] = useState([
@@ -77,6 +78,7 @@ export default function QrCodeTable() {
             ))}
           </TableBody>
         </Table>
+        <PaginacaoHome />
       </Card>
     </div>
   );

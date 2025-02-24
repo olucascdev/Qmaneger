@@ -19,8 +19,12 @@ Route::get('/home', function () {
 })->middleware(['auth', 'verified'])->name('home');
 
 Route::get('/users', function () {
-    return Inertia::render('UsersIndex');
-})->middleware(['auth', 'verified'])->name('users.index');
+    return Inertia::render('Users');
+})->middleware(['auth', 'verified'])->name('users');
+
+Route::get('/unidades', function () {
+    return Inertia::render('Unidades');
+})->middleware(['auth', 'verified'])->name('unidades');
 
 
 Route::middleware('auth')->group(function () {
