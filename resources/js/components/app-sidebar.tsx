@@ -21,17 +21,17 @@ import {
   MapPlus,
 } from "lucide-react"
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/Components/nav-main"
+import { NavProjects } from "@/Components/nav-projects"
+import { NavUser } from "@/Components/nav-user"
+import { TeamSwitcher } from "@/Components/team-switcher"
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
+} from "@/Components/ui/sidebar"
 
 // This is sample data.
 const data = {  //usuario
