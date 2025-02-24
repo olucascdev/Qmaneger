@@ -1,6 +1,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/Components/app-sidebar"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -8,7 +8,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+} from "@/Components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
 import {
   SidebarInset,
@@ -16,7 +16,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { Button } from '@/components/ui/button';
-import QrCodeTable from '@/components/QrCodeTable';
+import QrCodeTable from '@/Components/QrCodeTable';
 
 export default function Dashboard() {
     return (
@@ -40,7 +40,7 @@ export default function Dashboard() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/30 md:min-h-min">
+          <div className="min-h-[100vh] flex-1 rounded-xl md:min-h-min">
                 <QrCodeTable />
 
           </div>
