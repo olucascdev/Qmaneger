@@ -67,10 +67,15 @@ const data = {  //usuario
       
     },
     {
-      title: "Meus Qrcodes",
-      url: "/home",
+      title: "Qrcodes",
+      url: "#",
       icon: Folder,
       items: [
+        { //isso aqui vai ficar automatizado
+          title: "Meus Qrcodes", //ao clicar vai pedir somente o nome da pasta e logo em cima embaixo vai ser adicionado a pasta
+          url: "/home",
+          //tentar colocar icons aqui no nav-main 
+        },
         { //isso aqui vai ficar automatizado
           title: "Criar nova pasta", //ao clicar vai pedir somente o nome da pasta e logo em cima embaixo vai ser adicionado a pasta
           url: "#",
